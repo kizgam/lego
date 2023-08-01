@@ -1,0 +1,51 @@
+/* Resetowanie stylów dla elementów HTML */
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.minifigures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Dwie kolumny z minimalną szerokością 250px */
+  gap: 1rem;
+}
+
+.minifigure {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 250px; /* Ogranicz maksymalną szerokość elementów */
+}
+
+.minifigure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.minifigure h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.minifigure p {
+  font-size: 1rem;
+}
